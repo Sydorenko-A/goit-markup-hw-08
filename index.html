@@ -39,13 +39,22 @@
           </button>
           <div class="mobile-menu" id="mobile-menu" data-menu>
             <ul class="mobile-menu__list">
-              <li class="-mobile-menu__item">
+              <li class="mobile-menu__item">
                 <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Cтудия</a>
               </li>
               <li class="mobile-menu__item">
-                <a class="mobile-munu__link" href="./portfolio.html">Портфолио</a>
+                <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакты</a></li>
+            </ul>
+
+            <ul class="mobile-menu__contact-list">
+              <li class="mobile-menu__contact-item">
+                <a href="tel:+380961111111" class="mobile-menu__tel-link"> +38 096 111 11 11 </a>
+              </li>
+              <li class="mobile-menu__contact-item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu__mail"> info@devstudio.com </a>
+              </li>
             </ul>
 
             <ul class="mobile-menu__social-list">
@@ -152,12 +161,24 @@
           <ul class="products__list">
             <li class="products__item">
               <div class="products__img">
-                <img
-                  src="./images/box1.jpg"
-                  alt="На столе находится планшет и клавиатура. Руки набирают код на клавиатуре"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/products/box1_desktop.webp 1x, ./images/products/box1_desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/products/box1_desktop.jpg 1x, ./images/products/box1_desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/products/box1_desktop.jpg"
+                    alt="На столе находится планшет и клавиатура. Руки набирают код на клавиатуре"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="products__thumb">
                   <h3 class="products__subtitle">Десктопные приложения</h3>
                 </div>
@@ -165,12 +186,24 @@
             </li>
             <li class="products__item">
               <div class="products__img">
-                <img
-                  src="./images/box2.jpg"
-                  alt="На столе стоит ноутбук с открытым изображением мобильного устройства. Руки держат мобильное устройство. "
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/products/box2_desktop.webp 1x, ./images/products/box2_desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/products/box2_desktop.jpg 1x, ./images/products/box2_desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/products/box2_desktop.jpg"
+                    alt="На столе стоит ноутбук с открытым изображением мобильного устройства. Руки держат мобильное устройство."
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="products__thumb">
                   <h3 class="products__subtitle">Мобильные приложения</h3>
                 </div>
@@ -178,12 +211,24 @@
             </li>
             <li class="products__item">
               <div class="products__img">
-                <img
-                  src="./images/box3.jpg"
-                  alt="Руки держат планшет с отрытой палитрой цветов"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/products/box3_desktop.webp 1x, ./images/products/box3_desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/products/box3_desktop.jpg 1x, ./images/products/box3_desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/products/box3_desktop.jpg"
+                    alt="Руки держат планшет с отрытой палитрой цветов"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="products__thumb">
                   <h3 class="products__subtitle">Дизайнерские решения</h3>
                 </div>
@@ -199,33 +244,65 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/img1.jpg" alt="фото Игоря Демьяненко" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/team/img1_desktop.webp 1x, ./images/team/img1_desktop@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img1_desktop.jpg 1x, ./images/team/img1_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/img1_tablet.webp 1x, ./images/team/img1_tablet@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img1_tablet.jpg 1x, ./images/team/img1_tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/img1_mobile.webp 1x, ./images/team/img1_mobile@2x.webp 2x"
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img1_mobile.jpg 1x, ./images/team/img1_mobile@2x.jpg 2x"
+                  media="(max-width: 768px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/img1_mobile.jpg" alt="фото Игоря Демьяненко" />
+              </picture>
               <div class="team__discription">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__profession" lang="en">Product Designer</p>
                 <ul class="team__social">
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.instagram.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://twitter.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.facebook.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.linkedin.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -236,33 +313,65 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img2.jpg" alt="фото Ольги Репиной" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/team/img2_desktop.webp 1x, ./images/team/img2_desktop@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img2_desktop.jpg 1x, ./images/team/img2_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/img2_tablet.webp 1x, ./images/team/img2_tablet@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img2_tablet.jpg 1x, ./images/team/img2_tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/img2_mobile.webp 1x, ./images/team/img2_mobile@2x.webp 2x"
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img2_mobile.jpg 1x, ./images/team/img2_mobile@2x.jpg 2x"
+                  media="(max-width: 768px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/img2_mobile.jpg" alt="фото Ольги Репиной" />
+              </picture>
               <div class="team__discription">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__profession" lang="en">Frontend Developer</p>
                 <ul class="team__social">
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.instagram.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://twitter.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.facebook.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.linkedin.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -273,33 +382,65 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img3.jpg" alt="фото Николая Тарасова" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/team/img3_desktop.webp 1x, ./images/team/img3_desktop@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img3_desktop.jpg 1x, ./images/team/img3_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/img3_tablet.webp 1x, ./images/team/img3_tablet@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img3_tablet.jpg 1x, ./images/team/img3_tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/img3_mobile.webp 1x, ./images/team/img3_mobile@2x.webp 2x"
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img3_mobile.jpg 1x, ./images/team/img3_mobile@2x.jpg 2x"
+                  media="(max-width: 768px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/img3_mobile.jpg" alt="фото Николая Тарасова" />
+              </picture>
               <div class="team__discription">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__profession" lang="en">Marketing</p>
                 <ul class="team__social">
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.instagram.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://twitter.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.facebook.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.linkedin.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -310,33 +451,65 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img4.jpg" alt="фото Михаила Ермакова" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/team/img4_desktop.webp 1x, ./images/team/img4_desktop@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img4_desktop.jpg 1x, ./images/team/img4_desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/img4_tablet.webp 1x, ./images/team/img4_tablet@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img4_tablet.jpg 1x, ./images/team/img4_tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/img4_mobile.webp 1x, ./images/team/img4_mobile@2x.webp 2x"
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/img4_mobile.jpg 1x, ./images/team/img4_mobile@2x.jpg 2x"
+                  media="(max-width: 768px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/img4_mobile.jpg" alt="фото Михаила Ермакова" />
+              </picture>
               <div class="team__discription">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__profession" lang="en">UI Designer</p>
                 <ul class="team__social">
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.instagram.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://twitter.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.facebook.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team__social-item">
                     <a class="team__social-link" href="https://www.linkedin.com" target="_blank">
                       <svg class="team__social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -354,42 +527,42 @@
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients__list">
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="44.27" height="49.23">
                   <use href="./images/icons.svg#icon-logo1"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="/" class="clients__link">
                 <svg class="clients__icon" width="40" height="52">
                   <use href="./images/icons.svg#icon-logo2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="41" height="42.6">
                   <use href="./images/icons.svg#icon-logo3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="79.66" height="42.02">
                   <use href="./images/icons.svg#icon-logo4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="59" height="47">
                   <use href="./images/icons.svg#icon-logo5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="88.48" height="45.44">
                   <use href="./images/icons.svg#icon-logo6"></use>
@@ -404,7 +577,7 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <div>
+        <div class="footer__address">
           <a class="logo" lang="en" href="./"
             ><span class="logo--accent">Web</span><span class="logo--white">Studio</span>
           </a>
