@@ -56,7 +56,9 @@
 }
 .footer-social {
   width: 206px;
-  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer-social__item {
   width: 44px;
@@ -81,9 +83,7 @@
 .footer-social__icon {
   fill: currentColor;
 }
-.subscription {
-  margin-top: 60px;
-}
+
 .subscription__title {
   font-weight: 700;
   font-size: 14px;
@@ -146,7 +146,8 @@
   .footer .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: baseline;
   }
   .footer__address {
     margin-right: 165px;
@@ -155,7 +156,6 @@
 
   .footer-social {
     margin: 0;
-    padding-top: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
