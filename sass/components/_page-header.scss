@@ -47,9 +47,12 @@
   padding: 48px 40px;
   background-color: var(--primary-white-color);
   z-index: 100;
+  overflow: hidden;
 
-  &.is-open {
-    display: block;
+  @media screen and (max-width: 767px) {
+    &.is-open {
+      display: block;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -120,6 +123,7 @@
 .mobile-menu__social-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .mobile-menu__social-list-item:not(:last-child) {

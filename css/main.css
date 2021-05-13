@@ -166,10 +166,13 @@ body {
   padding: 48px 40px;
   background-color: var(--primary-white-color);
   z-index: 100;
+  overflow: hidden;
 }
 
-.mobile-menu.is-open {
-  display: block;
+@media screen and (max-width: 767px) {
+  .mobile-menu.is-open {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -259,6 +262,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-menu__social-list-item:not(:last-child) {
