@@ -42,4 +42,7 @@ body {
   font-family: var(--roboto-font);
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  &.modal-open {
+    overflow: hidden;
+  }
 }
