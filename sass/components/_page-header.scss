@@ -246,3 +246,27 @@
     margin-right: 10px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .mail {
+    width: 14px;
+    height: 10px;
+  }
+
+  .smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail {
+    width: 16px;
+    height: 12px;
+  }
+
+  .smartphone {
+    width: 10px;
+    height: 16px;
+  }
+}
