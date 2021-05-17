@@ -1258,11 +1258,13 @@ body.modal-open {
     align-items: baseline;
   }
   .footer__address {
-    margin-right: 165px;
     margin-bottom: 0;
   }
   .footer-social {
     margin: 0;
+  }
+  .subscription {
+    margin-top: 60px;
   }
 }
 
@@ -1354,7 +1356,7 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
-  .filters__item:not(:last-child) {
+  .filters__item:nth-child(-n + 3) {
     margin-bottom: 15px;
   }
 }
